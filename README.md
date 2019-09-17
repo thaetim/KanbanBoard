@@ -1,2 +1,2 @@
 # KanbanBoard
-Application intended to aid in project management using kanban method
+JavaFX kanban-style board application intended to aid in project management.
