@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="150.0" minWidth="640.0" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ms.jsm.kanban.view.RootController">
+    <top>
+        <MenuBar fx:id="mainMenu" BorderPane.alignment="CENTER">
+            <menus>
+                <Menu mnemonicParsing="false" text="File">
+                    <items>
+                        <MenuItem fx:id="mOpen" mnemonicParsing="false" onAction="#handleOpen" text="Open" />
+                  <MenuItem fx:id="mSave" mnemonicParsing="false" onAction="#handleSave" text="Save" />
+                  <MenuItem fx:id="mExport" mnemonicParsing="false" onAction="#handleExport" text="Export" />
+                  <MenuItem fx:id="mImport" mnemonicParsing="false" onAction="#handleImport" text="Import" />
+                  <MenuItem fx:id="mClose" mnemonicParsing="false" onAction="#handleClose" text="Close" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+    </top>
+</BorderPane>

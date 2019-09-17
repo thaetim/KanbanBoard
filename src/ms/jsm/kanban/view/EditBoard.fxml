@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="307.0" scaleShape="false" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ms.jsm.kanban.view.EditBoardController">
+   <children>
+      <AnchorPane>
+         <children>
+            <Label layoutX="257.0" layoutY="14.0" prefHeight="17.0" prefWidth="36.0" text="TITLE" textAlignment="CENTER" AnchorPane.rightAnchor="14.0">
+               <font>
+                  <Font name="Corbel Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="161.0" layoutY="50.0" text="PRIORITY" AnchorPane.rightAnchor="85.0">
+               <font>
+                  <Font name="Corbel Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="202.0" layoutY="219.0" text="DESCRIPTION" textAlignment="CENTER" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="17.0">
+               <font>
+                  <Font name="Corbel Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="161.0" layoutY="84.0" text="DATE" AnchorPane.rightAnchor="111.0">
+               <font>
+                  <Font name="Corbel Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane onKeyTyped="#handleCancel" opacity="0.8" prefHeight="250.0" prefWidth="300.0">
+         <children>
+            <TextField fx:id="titleField" layoutX="10.0" layoutY="10.0" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="100.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0" />
+            <TextField fx:id="priorityField" layoutX="10.0" layoutY="45.0" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="218.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="79.0" />
+            <TextArea fx:id="descArea" layoutX="10.0" layoutY="110.0" minWidth="-Infinity" prefHeight="182.0" prefWidth="287.0" wrapText="true" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="115.0" />
+            <DatePicker fx:id="datePicker" layoutX="10.0" layoutY="80.0" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="218.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="79.0" />
+            <Button layoutX="237.0" layoutY="45.0" mnemonicParsing="false" onAction="#handleOk" prefHeight="60.0" prefWidth="60.0" text="OK" textFill="WHITE" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="45.0">
+               <font>
+                  <Font name="Corbel Bold" size="21.0" />
+               </font></Button>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
